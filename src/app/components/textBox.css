@@ -1,0 +1,36 @@
+.box {
+  width: 500px;
+  height: 100px;
+  background-color: white;
+  border-radius: 12px;
+  color: black;
+  padding: 12px;
+  position: relative;
+}
+
+.box.full {
+  height: auto;
+}
+
+.box__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.box__text.full {
+  display: block;
+}
+
+.box__see-more-btn {
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  background: linear-gradient(to right, transparent, #0878c6 80%);
+  color: black;
+  border: none;
+  padding: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
